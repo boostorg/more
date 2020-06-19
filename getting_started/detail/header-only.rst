@@ -41,10 +41,6 @@ __ ../../libs/python/doc/html/building.html
 
 A few libraries have optional separately-compiled binaries:
 
-* Boost.DateTime_ has a binary component that is only needed if
-  you're using its ``to_string``\ /\ ``from_string`` or serialization
-  features, or if you're targeting Visual C++ 6.x or Borland.
-
 * Boost.Graph_ also has a binary component that is only needed if
   you intend to `parse GraphViz files`__.
 
