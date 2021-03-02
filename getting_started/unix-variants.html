@@ -301,16 +301,16 @@ path in place of the Boost root directory.</p>
 <div class="section" id="or-build-custom-binaries">
 <h2><a class="toc-backref" href="#id27">5.2&nbsp;&nbsp;&nbsp;Or, Build Custom Binaries</a></h2>
 <p>If you're using a compiler other than your system's default, you'll
-need to use <a class="reference external" href="../../tools/build/index.html">Boost.Build</a> to create binaries.</p>
+need to use <a class="reference external" href="../../tools/build/doc/html/index.html">Boost.Build</a> to create binaries.</p>
 <p>You'll also
 use this method if you need a nonstandard build variant (see the
-<a class="reference external" href="../../tools/build/index.html">Boost.Build documentation</a> for more details).</p>
+<a class="reference external" href="../../tools/build/doc/html/index.html">Boost.Build documentation</a> for more details).</p>
 <!-- Copyright David Abrahams 2006. Distributed under the Boost -->
 <!-- Software License, Version 1.0. (See accompanying -->
 <!-- file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt) -->
 <div class="section" id="install-boost-build">
 <h3><a class="toc-backref" href="#id28">5.2.1&nbsp;&nbsp;&nbsp;Install Boost.Build</a></h3>
-<p><a class="reference external" href="../../tools/build/index.html">Boost.Build</a> is a text-based system for developing, testing, and
+<p><a class="reference external" href="../../tools/build/doc/html/index.html">Boost.Build</a> is a text-based system for developing, testing, and
 installing software. First, you'll need to build and
 install it. To do this:</p>
 <ol class="arabic simple">
@@ -324,12 +324,12 @@ the directory where you want Boost.Build to be installed</li>
 <div class="section" id="identify-your-toolset">
 <span id="toolset-name"></span><span id="toolset"></span><h3><a class="toc-backref" href="#id29">5.2.2&nbsp;&nbsp;&nbsp;Identify Your Toolset</a></h3>
 <p>First, find the toolset corresponding to your compiler in the
-following table (an up-to-date list is always available <a class="reference external" href="https://boostorg.github.io/build/manual/develop/index.html#bbv2.reference.tools">in the
+following table (an up-to-date list is always available <a class="reference external" href="../../tools/build/doc/html/index.html#bbv2.reference.tools">in the
 Boost.Build documentation</a>).</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">If you previously chose a toolset for the purposes of
-<a class="reference external" href="../../doc/html/bbv2/installation.html">building b2</a>, you should assume it won't work and instead
+<a class="reference external" href="../../tools/build/doc/html/index.html#bbv2.installation">building b2</a>, you should assume it won't work and instead
 choose newly from the table below.</p>
 </div>
 <table border="1" class="docutils">
@@ -356,7 +356,7 @@ Name</th>
 </tr>
 <tr><td><tt class="docutils literal">como</tt></td>
 <td>Comeau Computing</td>
-<td>Using this toolset may require <a class="reference external" href="../../tools/build/index.html">configuring</a> another
+<td>Using this toolset may require <a class="reference external" href="../../tools/build/doc/html/index.html">configuring</a> another
 toolset to act as its backend.</td>
 </tr>
 <tr><td><tt class="docutils literal">darwin</tt></td>
@@ -407,7 +407,7 @@ a hyphen, e.g. <tt class="docutils literal"><span class="pre">intel-9.0</span></
 </div>
 <div class="section" id="select-a-build-directory">
 <span id="id11"></span><span id="build-directory"></span><h3><a class="toc-backref" href="#id30">5.2.3&nbsp;&nbsp;&nbsp;Select a Build Directory</a></h3>
-<p><a class="reference external" href="../../tools/build/index.html">Boost.Build</a> will place all intermediate files it generates while
+<p><a class="reference external" href="../../tools/build/doc/html/index.html">Boost.Build</a> will place all intermediate files it generates while
 building into the <strong>build directory</strong>.  If your Boost root
 directory is writable, this step isn't strictly necessary: by
 default Boost.Build will create a <tt class="docutils literal">bin.v2/</tt> subdirectory for that
@@ -421,7 +421,7 @@ invoke <tt class="docutils literal">b2</tt> as follows:</p>
 b2 <strong>--build-dir=</strong><a class="reference internal" href="#id11"><em>build-directory</em></a> <strong>toolset=</strong><a class="reference internal" href="#toolset-name"><em>toolset-name</em></a> ``&nbsp;`` stage
 </pre>
 <p>For a complete description of these and other invocation options,
-please see the <a class="reference external" href="http://www.boost.org/build/doc/html/bbv2/overview/invocation.html">Boost.Build documentation</a>.</p>
+please see the <a class="reference external" href="../../tools/build/doc/html/index.html#bbv2.overview.invocation">Boost.Build documentation</a>.</p>
 <p>For example, your session might look like this:</p>
 <pre class="literal-block">
 $ cd ~/<tt class="docutils literal">boost_1_76_0</tt>
@@ -495,9 +495,9 @@ packages for libz and libbz2 if you need those features.  Other
 errors when building Boost libraries are cause for concern.</p>
 <p>If it seems like the build system can't find your compiler and/or
 linker, consider setting up a <tt class="docutils literal"><span class="pre">user-config.jam</span></tt> file as described
-<a class="reference external" href="http://www.boost.org/build/doc/html/bbv2/overview/configuration.html">here</a>.  If that isn't your problem or the <tt class="docutils literal"><span class="pre">user-config.jam</span></tt> file
+<a class="reference external" href="../../tools/build/doc/html/index.html#bbv2.overview.configuration">here</a>.  If that isn't your problem or the <tt class="docutils literal"><span class="pre">user-config.jam</span></tt> file
 doesn't work for you, please address questions about configuring Boost
-for your compiler to the <a class="reference external" href="http://www.boost.org/more/mailing_lists.htm#jamboost">Boost.Build mailing list</a>.</p>
+for your compiler to the <a class="reference external" href="http://www.boost.org/more/mailing_lists.htm#users">Boost Users' mailing list</a>.</p>
 <!-- Copyright David Abrahams 2006. Distributed under the Boost -->
 <!-- Software License, Version 1.0. (See accompanying -->
 <!-- file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt) -->
@@ -778,9 +778,8 @@ If you can't find what you need, or there's anything we can do to
 make this document clearer, please post it to the <a class="reference external" href="http://www.boost.org/more/mailing_lists.htm#users">Boost Users'
 mailing list</a>.</p>
 <ul class="simple">
-<li><a class="reference external" href="../../tools/build/index.html">Boost.Build reference manual</a></li>
+<li><a class="reference external" href="../../tools/build/doc/html/index.html">Boost.Build reference manual</a></li>
 <li><a class="reference external" href="http://www.boost.org/more/mailing_lists.htm#users">Boost Users' mailing list</a></li>
-<li><a class="reference external" href="http://www.boost.org/more/mailing_lists.htm#jamboost">Boost.Build mailing list</a></li>
 <li><a class="reference external" href="../../libs/index.html">Index of all Boost library documentation</a></li>
 </ul>
 <div class="admonition admonition-onward">
