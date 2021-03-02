@@ -34,7 +34,7 @@ following elements:
    feature, a single letter is added to the tag:
 
      +-----+------------------------------------------------------------------------------+---------------------+
-     |Key  |Use this library when:                                                        |Boost.Build option   |
+     |Key  |Use this library when:                                                        |B2 option            |
      +=====+==============================================================================+=====================+
      |``s``|linking statically to the C++ standard library and compiler runtime support   |runtime-link=static  |
      |     |libraries.                                                                    |                     |
@@ -59,7 +59,7 @@ following elements:
   *Architecture and address model tag*: in the first letter, encodes the architecture as follows:
 
      +-----+------------------+---------------------+
-     |Key  |Architecture      |Boost.Build option   |
+     |Key  |Architecture      |B2 option            |
      +=====+==================+=====================+
      |``x``|x86-32, x86-64    |architecture=x86     |
      +-----+------------------+---------------------+
@@ -77,7 +77,7 @@ following elements:
   The two digits following the letter encode the address model as follows:
 
      +------+------------------+---------------------+
-     |Key   |Address model     |Boost.Build option   |
+     |Key   |Address model     |B2 option            |
      +======+==================+=====================+
      |``32``|32 bit            |address-model=32     |
      +------+------------------+---------------------+
@@ -100,7 +100,7 @@ following elements:
   a symbolic link to the library file, named without the trailing
   version number, will also be created.
 
-.. .. _Boost.Build toolset names: toolset-name_
+.. .. _B2 toolset names: toolset-name_
 
 __ ../../libs/python/doc/html/building/python_debugging_builds.html
 

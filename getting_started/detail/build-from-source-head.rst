@@ -2,21 +2,21 @@
 .. Software License, Version 1.0. (See accompanying
 .. file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
 
-Install Boost.Build
-...................
+Install B2
+..........
 
-Boost.Build_ is a text-based system for developing, testing, and
+B2_ is a text-based system for developing, testing, and
 installing software. First, you'll need to build and
 install it. To do this:
 
 1. Go to the directory ``tools``\ |/|\ ``build``\ |/|.
 2. Run |bootstrap|
 3. Run ``b2 install --prefix=``\ *PREFIX* where *PREFIX* is
-   the directory where you want Boost.Build to be installed
+   the directory where you want B2 to be installed
 4. Add *PREFIX*\ |/|\ ``bin`` to your PATH environment variable.
 
-.. _Boost.Build: ../../tools/build/index.html
-.. _Boost.Build documentation: Boost.Build_
+.. _B2: ../../tools/build/doc/html/index.html
+.. _B2 documentation: B2_
 
 .. _toolset:
 .. _toolset-name:
@@ -26,15 +26,15 @@ Identify Your Toolset
 
 First, find the toolset corresponding to your compiler in the
 following table (an up-to-date list is always available `in the
-Boost.Build documentation`__).
+B2 documentation`__).
 
-__ https://boostorg.github.io/build/manual/develop/index.html#bbv2.reference.tools
+__ ../../tools/build/doc/html/index.html#bbv2.reference.tools
 
 .. Note:: If you previously chose a toolset for the purposes of
   `building b2`_, you should assume it won't work and instead
   choose newly from the table below.
 
-.. _building b2: ../../doc/html/bbv2/installation.html
+.. _building b2: ../../tools/build/doc/html/index.html#bbv2.installation
 
 +-----------+--------------------+------------------------------------------------------------+
 |Toolset    |Vendor              |Notes                                                       |
@@ -73,7 +73,7 @@ __ https://boostorg.github.io/build/manual/develop/index.html#bbv2.reference.too
 |``vacpp``  |IBM                 |The VisualAge C++ compiler.                                 |
 +-----------+--------------------+------------------------------------------------------------+
 
-__ Boost.Build_
+__ B2_
 
 If you have multiple versions of a particular compiler installed,
 you can append the version number to the toolset name, preceded by
@@ -87,10 +87,10 @@ a hyphen, e.g. ``intel-9.0`` or
 Select a Build Directory
 ........................
 
-Boost.Build_ will place all intermediate files it generates while
+B2_ will place all intermediate files it generates while
 building into the **build directory**.  If your Boost root
 directory is writable, this step isn't strictly necessary: by
-default Boost.Build will create a ``bin.v2/`` subdirectory for that
+default B2 will create a ``bin.v2/`` subdirectory for that
 purpose in your current working directory.
 
 Invoke ``b2``
@@ -107,7 +107,7 @@ invoke ``b2`` as follows:
   b2 **--build-dir=**\ |build-directory|_ **toolset=**\ |toolset-name|_ |build-type-complete| stage
 
 For a complete description of these and other invocation options,
-please see the `Boost.Build documentation`__.
+please see the `B2 documentation`__.
 
-__ http://www.boost.org/build/doc/html/bbv2/overview/invocation.html
+__ ../../tools/build/doc/html/index.html#bbv2.overview.invocation
 

@@ -129,11 +129,11 @@ Or, Build Custom Binaries
 -------------------------
 
 If you're using a compiler other than your system's default, you'll
-need to use Boost.Build_ to create binaries.
+need to use B2_ to create binaries.
 
 You'll also
 use this method if you need a nonstandard build variant (see the
-`Boost.Build documentation`_ for more details).
+`B2 documentation`_ for more details).
 
 .. include:: detail/build-from-source-head.rst
 
