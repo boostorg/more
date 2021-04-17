@@ -5,8 +5,8 @@
 .. This file contains all the definitions that need to be updated
 .. for each new release of Boost.
 
-.. |boost-version-number| replace:: 76
-.. |boost_ver| replace:: ``boost_1_76_0``
-.. |boost_ver-bold| replace:: **boost_1_76_0**
+.. |boost-version-number| replace:: 77
+.. |boost_ver| replace:: ``boost_1_77_0``
+.. |boost_ver-bold| replace:: **boost_1_77_0**
 
-.. _sf-download: http://www.boost.org/users/history/version_1_76_0.html
+.. _sf-download: http://www.boost.org/users/history/version_1_77_0.html
